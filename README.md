@@ -1,4 +1,5 @@
 # poke-app
+You can find this project live at https://elastic-mccarthy-a35d5a.netlify.app/
 ## Available Scripts
 
 In the project directory, you can run:
