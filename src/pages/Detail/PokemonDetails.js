@@ -60,9 +60,9 @@ const PokemonDetails = (props) => {
         <ErrorMessage variant="danger"> {error} </ErrorMessage>
       ) : (
         <>
-          <div className="text-center ">
+          <div className="text-center">
             <Image className="pb-4" src={frontImg} />
-            <h1 className="detail-name d-inline">
+            <h1 className="d-inline">
               {firstCharToUpperCase(name)}
             </h1>
             <Image className="pb-4" src={backImg} />
@@ -73,7 +73,7 @@ const PokemonDetails = (props) => {
             </Col>
 
             <Col xs={12} md={6}>
-              <div className="  p-4">
+              <div className="p-4">
                 <div className="text-center">
                   <h2>
                     <Translate turkish="İstatistikler" english="Statistics" />
