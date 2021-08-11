@@ -16,7 +16,6 @@ const CatchedPokemon = () => {
   const showMoreHandler = () => {
     setVisible((prevValue) => prevValue + 30);
   };
-  console.log("catchedPokemon: ", catchedPokemon);
 
   return (
     <div>
