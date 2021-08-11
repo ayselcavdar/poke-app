@@ -9,7 +9,6 @@ const CatchAndReleaseBtn = ({ pokeId, pokemonDetail }) => {
   const [catched, setCatched] = useState(false);
   const dispatch = useDispatch();
   const catchedPokemons = useSelector((state) => state.catchedPokemon);
-  console.log("pokemonDetail: ", catchedPokemons);
 
   useEffect(() => {
     for (let i = 0; i < catchedPokemons.length; i++) {
