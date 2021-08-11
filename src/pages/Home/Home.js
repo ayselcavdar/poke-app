@@ -57,7 +57,6 @@ const Home = () => {
     );
     setPokemonData(_pokemonData);
   };
-  console.log("pokemonData :", pokemonData);
 
   return (
     <div title="HomeTitle">
