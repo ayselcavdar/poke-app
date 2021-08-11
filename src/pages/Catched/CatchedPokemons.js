@@ -16,6 +16,7 @@ const CatchedPokemon = () => {
   const showMoreHandler = () => {
     setVisible((prevValue) => prevValue + 30);
   };
+  const imgUrl = "https://pokeres.bastionbot.org/images/pokemon/";
 
   return (
     <div>
@@ -64,7 +65,8 @@ const CatchedPokemon = () => {
                         </h3>
                         <Card.Img
                           variant="top"
-                          src={`https://pokeres.bastionbot.org/images/pokemon/${pokemon.pokemonId}.png`}
+                          style={{width:'100%'}}  
+                          src={pokemon?.pokemon?.sprites?.front_default ? pokemon?.pokemon?.sprites?.front_default : `${imgUrl + pokemon?.pokemonId}.png`}
                         />
                         <FavPokemon pokeId={pokemon.pokemonId} />
                         <div className="text-center mt-1 mb-1">
