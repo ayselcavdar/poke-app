@@ -11,14 +11,13 @@ const cardBody = {
 };
 
 const PokemonCard = ({ pokemon }) => {
-
   return (
     <Card className="m-3" style={{ width: "19em", display: "inline-flex" }}>
       <Card.Img
         style={{ width: "10em" }}
         className="m-auto"
         variant="top"
-        src={`https://pokeres.bastionbot.org/images/pokemon/${pokemon?.id}.png`}
+        src={pokemon?.sprites?.front_default ? pokemon?.sprites?.front_default : `https://pokeres.bastionbot.org/images/pokemon/${pokemon?.id}.png`}
         all="pokemon-img"
       />
       <Card.Body style={cardBody}>
