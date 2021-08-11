@@ -69,7 +69,7 @@ const PokemonDetails = (props) => {
           </div>
           <Row>
             <Col xs={12} md={5}>
-              <Image src={`${imgUrl + pokeId}.png`} fluid />
+              <Image style={{width:'100%'}}  src={pokemonDetail?.sprites?.front_shiny ? pokemonDetail?.sprites?.front_shiny : `${imgUrl + pokeId}.png`} fluid />
             </Col>
 
             <Col xs={12} md={6}>
