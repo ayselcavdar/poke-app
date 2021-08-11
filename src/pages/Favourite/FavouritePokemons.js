@@ -72,6 +72,8 @@ const FavouritePokemons = () => {
                             <Card.Img
                               variant="top"
                               src={`https://pokeres.bastionbot.org/images/pokemon/${catchedPokemon.pokemonId}.png`}
+                              src={catchedPokemon?.pokemon?.sprites?.front_default ? catchedPokemon?.pokemon?.sprites?.front_default : `https://pokeres.bastionbot.org/images/pokemon/${catchedPokemon.pokemonId}.png`}
+
                             />
                             <FavPokemon pokeId={catchedPokemon.pokemonId} />
                             <div className="text-center mt-1 mb-1">
